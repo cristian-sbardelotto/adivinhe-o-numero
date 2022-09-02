@@ -1,29 +1,26 @@
-let numberForm = document.querySelector('#numform');
+let numeroFormulario = document.querySelector('#numform');
 let result = document.querySelector('.result');
 let button = document.querySelector('input.btn');
+let numeroAleatorio = Math.floor(Math.random() * 100);
 
-let randomNum = Math.floor(Math.random() * 100);
-if (randomNum == 0) { randomNum = randomNum + Math.floor(Math.random() * 99); }
+// COMANDO PARA NÃO PERMITIR QUE O NÚMERO SEJA IGUAL A 0
+if (numeroAleatorio == 0) {
+numeroAleatorio = numeroAleatorio + Math.floor(Math.random() * 99); 
+}
 
-console.log(`Parabéns, você achou o Console.`);
-console.log(`Ha Ha Ha!`);
-console.log(`O número é ${randomNum}`);
-
-// PARA CARREGAR OS ELEMENTOS APÓS A ANIMAÇÃO
-
+// COMANDO PARA CARREGAR OS ELEMENTOS APÓS A ANIMAÇÃO
 function carregar() {
     document.querySelector('.content').style.display = "block";
     document.querySelector('p').style.display = 'block';
     document.querySelector(".line").style.display = 'block';
-    numberForm.focus();
+    numeroFormulario.focus();
 }
 
-// SE APERTAR ENTER
-
+// COMANDO IF APERTAR ENTER
 function apertar(e) {
     if (e.keyCode === 13) {
-        let number = Number(numberForm.value);
-        isRight();
+        let number = Number(numeroFormulario.value);
+        estaCerto();
         if (number > 100 || number < 0) {
             alert("[ERRO] Número inválido!");
             result.innerHTML = 'Boa sorte...'
@@ -33,11 +30,10 @@ function apertar(e) {
     }
 }
 
-// SE CLICAR NO BOTÃO
-
+// COMANDO IF CLICAR NO BOTÃO
 function clicar() {
-    let number = Number(numberForm.value);
-    isRight();
+    let number = Number(numeroFormulario.value);
+    estaCerto();
     if (number > 100 || number < 0) {
         alert("[ERRO] Número inválido!");
         result.innerHTML = 'Boa sorte...'
@@ -45,21 +41,25 @@ function clicar() {
 }
 
 
-// FUNCTION PARA VERIFICAR SE O PLAYER ACERTOU O NÚMERO
-
-const isRight = () => {
-    let number = Number(numberForm.value);
-    if (number == randomNum) {
+// FUNÇÃO PARA VERIFICAR SE O PLAYER ACERTOU O NÚMERO
+const estaCerto = () => {
+    let number = Number(numeroFormulario.value);
+    if (number == numeroAleatorio) {
         alert("Parabéns, você acertou o número! \nA página será recarregada para tentar novamente!");
         document.location.reload();
     } else {
-        numberForm.value = ''
-        numberForm.focus();
-        if (randomNum > number) {
+        numeroFormulario.value = ''
+        numeroFormulario.focus();
+        if (numeroAleatorio > number) {
             result.innerHTML = 'O número é maior!';
         } else {
             result.innerHTML = 'O número é menor!';
         }
     }
 }
+
+console.log(`Parabéns, você achou o Console.`);
+console.log(`Ha Ha Ha!`);
+console.log(`O número é ${numeroAleatorio}`);
+
 
