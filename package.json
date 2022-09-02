@@ -1,0 +1,28 @@
+{
+  "name": "adivinhe_o_numero",
+  "version": "0.0.1",
+  "description": "Jogo de adivinhar o número que será sorteado pela máquina.",
+  "main": "\u001b[D\u001b",
+  "scripts": {
+    "start": "npx live-server html_arq/",
+    "test": "["
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristian-sbardelotto/adivinhe-o-numero.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Cristian Sbardelotto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristian-sbardelotto/adivinhe-o-numero/issues"
+  },
+  "homepage": "https://github.com/cristian-sbardelotto/adivinhe-o-numero#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

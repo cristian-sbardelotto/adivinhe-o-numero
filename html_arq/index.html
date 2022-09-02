@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="C:\Users\keiber\Pictures\VS Code\numbers.png">
+    <title>Adivinhe o número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onkeyup="apertar(event)" onload="setTimeout(carregar, 3600)">
+    <br> <br> <br> <br>
+    <h1>Adivinhe o Número</h1>
+
+    <br>
+    <section class="table">
+        <div class='content' style="display: none;">
+
+            <span class="txtAdiv">Adivinhe o número (entre 1 e 100):</span> <br>
+            <br> <span class="numb"><input type="number" name="" id="numform" class="number"></span>
+            <input class="btn" type="button" value="Adivinhar" onclick="clicar()"><br>
+            <br><div class='result'>
+                Boa sorte...
+            </div>
+        </div>
+
+    </section>
+
+    <br> <p style="display: none;">&copy; Cristian Sbardelotto</p>
+    <script src="random_number.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+@keyframes color {
+    from {background-color: darkolivegreen;}
+    to {background-color: greenyellow;}
+}
+
+@keyframes size {
+    from {width: 100px;}
+    to {width: 500px;}
+}
+
+@keyframes font {
+    from {font-size: 1px;}
+    to {font-size: 30px;}
+}
+
+@keyframes move {
+    from {opacity: 0%}
+    to {opacity: 100%;}
+}
+
+body {
+    background-color: greenyellow;
+    animation-name: color;
+    animation-duration: 3.5s;
+}
+section.table {
+    animation-name: size;
+    animation-duration: 3.5s;
+
+    font: normal 20pt Arial;
+    background-color: white;
+    border-radius: 24px 60px;
+    width: 500px;
+    height: 175px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: 8px 8px 20px black;
+}
+div.content {
+    font: normal 20pt Arial;
+}
+input.number {
+    width: 100px;
+    height: 25px;
+    font: normal 18pt Arial;
+}
+div.result {
+    font: normal 20pt Arial;
+}
+h1 {
+    text-align: center;
+    color: black;
+
+    animation-name: font;
+    animation-duration: 3.5s;
+}
+span.txtAdiv {
+    text-align: center;
+}
+span.numb {
+    align-content: center;
+}
+input.btn {
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+}
+p {
+    color: black;
+    text-align: center;
+    font: italic 15pt Arial;
+    animation-name: move;
+    animation-duration: 0.85s;
+
+}
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+  }
