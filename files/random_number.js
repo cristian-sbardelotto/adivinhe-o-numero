@@ -14,6 +14,7 @@ console.log(`O número é ${randomNum}`);
 function carregar() {
     document.querySelector('.content').style.display = "block";
     document.querySelector('p').style.display = 'block';
+    document.querySelector(".line").style.display = 'block';
     numberForm.focus();
 }
 

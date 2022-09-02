@@ -78,3 +78,8 @@ p {
     0%,100% { opacity: 0 }
     50% { opacity: 1 }
   }
+hr {
+    display: none;
+    width: 400px;
+    border-color: black; 
+}
