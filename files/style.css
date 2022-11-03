@@ -4,23 +4,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@keyframes color {
-    from {background-color: darkolivegreen;}
-    to {background-color: greenyellow;}
-}
-
 body {
-    background-color: greenyellow;
-    animation-name: color;
-    animation-duration: 3.5s;
+    background-color: #a758db;
 }
 
 section.table {
     position: relative;
 
-
-    /* animation-name: size; */
-    /* animation-duration: 3.5s; */
     width: 700px;
     padding: 15px;
     margin: auto;
@@ -31,17 +21,35 @@ section.table {
 }
 
 div.content {
+    padding: 2rem;
+
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 30px;
 }
 
 input.number {
+    background-color: #c7c7c7;
+    border-top: #808080;
+    border-left: #808080;
+    border-right: #808080;
+    border-bottom: #808080;
+    border-radius: 10px;
+    outline: unset;
+    padding: 10px;
+    margin-right: 10rem;
+    font-size: 1.5rem;
+
+    -webkit-user-drag: unset;
+
     width: 100px;
     height: 25px;
 }
 
 div.result {
+    width: fit-content;
+    margin: 0;
+
     color: black;
 }
 
@@ -52,17 +60,23 @@ h1 {
 
 span.txtAdiv {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 span.numb {
     align-content: center;
 }
+.game {
+    display: flex;
+    margin: 1rem 0 0 0;
+}
 
-input.btn {
-    background-color: darkolivegreen;
+button.btn {
+    height: 45px;    
+
     border-radius: 5px;
     font-weight: bold;
-    height: 30px;
+    background-color: #a758db;
 }
 
 p {
