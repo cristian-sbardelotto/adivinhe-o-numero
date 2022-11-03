@@ -5,15 +5,15 @@ let numeroAleatorio = Math.floor(Math.random() * 100);
 
 // COMANDO PARA NÃO PERMITIR QUE O NÚMERO SEJA IGUAL A 0
 if (numeroAleatorio == 0) {
-numeroAleatorio = numeroAleatorio + Math.floor(Math.random() * 99); 
+    numeroAleatorio = numeroAleatorio + Math.floor(Math.random() * 99); 
 }
 
-// COMANDO IF APERTAR ENTER
+// COMANDO SE APERTAR ENTER
 function apertar(e) {
     if (e.keyCode === 13) {
         let number = Number(numeroFormulario.value);
         estaCerto();
-        if (number > 100 || number < 0 || numberFormulario == 0 || numeroFormulario.value == '') {
+        if (number > 100 || number < 0 || number == 0) {
             alert("[ERRO] Número inválido!");
             result.innerHTML = 'Boa sorte...'
         }         
@@ -22,11 +22,11 @@ function apertar(e) {
     }
 }
 
-// COMANDO IF CLICAR NO BOTÃO
+// COMANDO SE CLICAR NO BOTÃO
 function clicar() {
     let number = Number(numeroFormulario.value);
     estaCerto();
-    if (number > 100 || number < 0 || number == 0 || numeroFormulario.value == '') {
+    if (number > 100 || number < 0 || number == 0) {
         alert("[ERRO] Número inválido!");
         result.innerHTML = 'Boa sorte...'
     } 
