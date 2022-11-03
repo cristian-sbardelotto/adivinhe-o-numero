@@ -1,83 +1,89 @@
-@keyframes color {
-    from {background-color: darkolivegreen;}
-    to {background-color: greenyellow;}
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
-@keyframes size {
-    from {width: 100px;}
-    to {width: 500px;}
-}
-
-@keyframes font {
-    from {font-size: 1px;}
-    to {font-size: 30px;}
-}
-
-@keyframes move {
-    from {opacity: 0%}
-    to {opacity: 100%;}
+:root {
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: greenyellow;
-    animation-name: color;
-    animation-duration: 3.5s;
+    background-color: #a758db;
 }
-section.table {
-    animation-name: size;
-    animation-duration: 3.5s;
 
-    font: normal 20pt Arial;
-    background-color: white;
-    border-radius: 24px 60px;
-    width: 500px;
-    height: 175px;
+section.table {
+    position: relative;
+
+    width: 700px;
     padding: 15px;
     margin: auto;
-    box-shadow: 8px 8px 20px black;
+
+    border-radius: 24px 60px;
+    background-color: white;
+    box-shadow: hsla(0, 0%, 0%, 0.302) 0px 19px 38px, hsla(0, 0%, 0%, 0.22) 0px 15px 12px;
 }
+
 div.content {
-    font: normal 20pt Arial;
+    padding: 2rem;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
 }
+
 input.number {
+    background-color: #c7c7c7;
+    border-top: #808080;
+    border-left: #808080;
+    border-right: #808080;
+    border-bottom: #808080;
+    border-radius: 10px;
+    outline: unset;
+    padding: 10px;
+    margin-right: 10rem;
+    font-size: 1.5rem;
+
+    -webkit-user-drag: unset;
+
     width: 100px;
     height: 25px;
-    font: normal 18pt Arial;
 }
+
 div.result {
-    font: normal 20pt Arial;
+    width: fit-content;
+    margin: 0;
+
+    color: black;
 }
+
 h1 {
     text-align: center;
     color: black;
-
-    animation-name: font;
-    animation-duration: 3.5s;
 }
+
 span.txtAdiv {
     text-align: center;
+    margin-bottom: 2rem;
 }
+
 span.numb {
     align-content: center;
 }
-input.btn {
-    background-color: darkolivegreen;
+.game {
+    display: flex;
+    margin: 1rem 0 0 0;
+}
+
+button.btn {
+    height: 45px;    
+
     border-radius: 5px;
     font-weight: bold;
-    height: 30px;
+    background-color: #a758db;
 }
+
 p {
     color: black;
     text-align: center;
-    font: italic 15pt Arial;
-    animation-name: move;
-    animation-duration: 0.85s;
-
 }
-@keyframes fade{
-    0%,100% { opacity: 0 }
-    50% { opacity: 1 }
-  }
+
 hr {
     display: none;
     width: 400px;

@@ -8,20 +8,12 @@ if (numeroAleatorio == 0) {
 numeroAleatorio = numeroAleatorio + Math.floor(Math.random() * 99); 
 }
 
-// COMANDO PARA CARREGAR OS ELEMENTOS APÓS A ANIMAÇÃO
-function carregar() {
-    document.querySelector('.content').style.display = "block";
-    document.querySelector('p').style.display = 'block';
-    document.querySelector(".line").style.display = 'block';
-    numeroFormulario.focus();
-}
-
 // COMANDO IF APERTAR ENTER
 function apertar(e) {
     if (e.keyCode === 13) {
         let number = Number(numeroFormulario.value);
         estaCerto();
-        if (number > 100 || number < 0) {
+        if (number > 100 || number < 0 || numberFormulario == 0 || numeroFormulario.value == '') {
             alert("[ERRO] Número inválido!");
             result.innerHTML = 'Boa sorte...'
         }         
@@ -34,7 +26,7 @@ function apertar(e) {
 function clicar() {
     let number = Number(numeroFormulario.value);
     estaCerto();
-    if (number > 100 || number < 0) {
+    if (number > 100 || number < 0 || number == 0 || numeroFormulario.value == '') {
         alert("[ERRO] Número inválido!");
         result.innerHTML = 'Boa sorte...'
     } 
